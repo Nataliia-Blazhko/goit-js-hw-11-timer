@@ -1,4 +1,4 @@
-class CountdownTimer {
+export default class CountdownTimer {
   constructor({ selector, targetDate }) {
     this.selector = selector;
     this.targetDate = targetDate;
@@ -27,5 +27,3 @@ class CountdownTimer {
     timerContainer.querySelector("span[data-value='secs']").textContent = secs;
   }, 1000);
 }
-
-export default CountdownTimer;
